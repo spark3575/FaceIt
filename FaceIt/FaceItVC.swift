@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FaceItVC.swift
 //  FaceIt
 //
 //  Created by Shin Park on 4/24/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FaceItVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

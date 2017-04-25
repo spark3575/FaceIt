@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
@@ -49,10 +49,13 @@
                             <constraint firstAttribute="trailing" secondItem="Xbz-Cf-3Hv" secondAttribute="trailing" id="tXq-w9-jHW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="Xbz-Cf-3Hv" id="bqf-Xd-wSn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="148"/>
+            <point key="canvasLocation" x="-294" y="164"/>
         </scene>
     </scenes>
 </document>

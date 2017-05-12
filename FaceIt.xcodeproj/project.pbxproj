@@ -18,6 +18,7 @@
 		B02365C31EB185DE0070B0FE /* VCLLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02365C21EB185DE0070B0FE /* VCLLoggingViewController.swift */; };
 		B045E3351EC37C3F0057CBC0 /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045E3341EC37C3F0057CBC0 /* BlinkingFaceViewController.swift */; };
 		B045E3371EC384F90057CBC0 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045E3361EC384F90057CBC0 /* EyeView.swift */; };
+		B0A590421EC524D90027CD1E /* ExpressionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A590411EC524D90027CD1E /* ExpressionEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B02365C21EB185DE0070B0FE /* VCLLoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLLoggingViewController.swift; sourceTree = "<group>"; };
 		B045E3341EC37C3F0057CBC0 /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
 		B045E3361EC384F90057CBC0 /* EyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
+		B0A590411EC524D90027CD1E /* ExpressionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		B02365A51EAE33980070B0FE /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				B02365AA1EAE33980070B0FE /* Main.storyboard */,
 				B02365BD1EAE61390070B0FE /* Model */,
 				B02365BE1EAE61480070B0FE /* View */,
 				B02365BF1EAE61560070B0FE /* Controller */,
@@ -96,7 +99,6 @@
 		B02365BE1EAE61480070B0FE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B02365AA1EAE33980070B0FE /* Main.storyboard */,
 				B045E3361EC384F90057CBC0 /* EyeView.swift */,
 				B02365B91EAE3DA60070B0FE /* FaceView.swift */,
 			);
@@ -108,6 +110,7 @@
 			children = (
 				B045E3341EC37C3F0057CBC0 /* BlinkingFaceViewController.swift */,
 				B02365C01EB15A200070B0FE /* EmotionsViewController.swift */,
+				B0A590411EC524D90027CD1E /* ExpressionEditorViewController.swift */,
 				B02365A81EAE33980070B0FE /* FaceViewController.swift */,
 				B02365C21EB185DE0070B0FE /* VCLLoggingViewController.swift */,
 			);
@@ -193,6 +196,7 @@
 				B02365C11EB15A200070B0FE /* EmotionsViewController.swift in Sources */,
 				B045E3351EC37C3F0057CBC0 /* BlinkingFaceViewController.swift in Sources */,
 				B02365A71EAE33980070B0FE /* AppDelegate.swift in Sources */,
+				B0A590421EC524D90027CD1E /* ExpressionEditorViewController.swift in Sources */,
 				B045E3371EC384F90057CBC0 /* EyeView.swift in Sources */,
 				B02365BA1EAE3DA60070B0FE /* FaceView.swift in Sources */,
 			);

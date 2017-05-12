@@ -10,12 +10,11 @@ import UIKit
 
 class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
 {
+    // MARK: (Read Only) Model
+    
     var name: String {
         return nameTextField?.text ?? ""
     }
-    
-    private let eyeChoices = [FacialExpression.Eyes.open, .closed, .squinting]
-    private let mouthChoices = [FacialExpression.Mouth.frown, .smirk, .neutral, .grin, .smile]
     
     var expression: FacialExpression {
         return FacialExpression(
@@ -23,6 +22,11 @@ class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
             mouth: mouthChoices[mouthControl?.selectedSegmentIndex ?? 0]
         )
     }
+    
+    private let eyeChoices = [FacialExpression.Eyes.open, .closed, .squinting]
+    private let mouthChoices = [FacialExpression.Mouth.frown, .smirk, .neutral, .grin, .smile]
+    
+    // MARK: User Interface Connectivity
     
     @IBAction func updateFace() {
         faceViewController?.expression = expression
@@ -41,6 +45,12 @@ class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
         }
     }
     
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        presentingViewController?.dismiss(animated: true)
+    }
+    
+    // MARK: View Controller Lifecycle
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let popoverPresentationController = navigationController?.popoverPresentationController {
@@ -54,6 +64,8 @@ class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
         preferredContentSize = size
     }
     
+    // MARK: UITableViewDelegate
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 1 {
             return tableView.bounds.size.width
@@ -62,13 +74,11 @@ class ExpressionEditorViewController: UITableViewController, UITextFieldDelegate
         }
     }
     
+    // MARK: UITextFieldDelegate
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-    }
-    
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
-        presentingViewController?.dismiss(animated: true)
     }
 }
 

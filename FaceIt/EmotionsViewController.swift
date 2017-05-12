@@ -56,6 +56,8 @@ class EmotionsViewController: UITableViewController, UIPopoverPresentationContro
         }
     }
     
+    // MARK: UIPopoverPresentationControllerDelegate
+    
     func adaptivePresentationStyle(
         for controller: UIPresentationController,
         traitCollection: UITraitCollection
